@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: rgb(212, 213, 214);
+    background-color: rgb(255, 255, 255);
     font-family: "terminal-grotesque-webfont";
     font-size: 15px;
 }
@@ -50,7 +50,7 @@ img {
 }
 
 .name h1 {
-    color:  rgb(34, 24, 175);
+    color:  rgb(17, 0, 255);
     font-family: "terminal-grotesque-webfont";
     font-size: 4rem;
     margin: 0;
@@ -58,7 +58,7 @@ img {
 }
 
 .name h1:hover {
-    color: rgb(134, 0, 0);
+    color: rgb(255, 0, 85);
 
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -70,7 +70,7 @@ img {
 }
 
 .bio p {
-    color: rgb(34, 24, 175);
+    color: rgb(17, 0, 255);
     font-size: 2rem;
     line-height: 1;
     text-align:left;
@@ -381,19 +381,19 @@ img {
 
 .text-1 {
     grid-area: text-1;
-    color: rgb(34, 24, 175);
+    color: rgb(17, 0, 255);
     text-align: center;
 }
 
 .text-2 {
     grid-area: text-2;
-    color: rgb(34, 24, 175);
+    color: rgb(17, 0, 255);
     text-align: center;
 }
 
 .text-3 {
     grid-area: text-3;
-    color: rgb(34, 24, 175);
+    color: rgb(17, 0, 255);
     text-align: center;
 }
 
