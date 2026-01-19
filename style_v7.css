@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(37, 13, 133);
+    background-color: rgb(166, 173, 187);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
 }
@@ -17,14 +17,19 @@ img {
     display: grid;
     padding: 15px 15px 15px 15px;
     gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    ". name name name bio bio bio ."
-    ". . . . . image-3 image-4 image-5"
-    ". . . . . image-1 image-1 image-1"
-    ". . . . . image-2 image-2 image-2"
-    ". . . . . . . ."
-    ". text-1 text-2 text-3 text-4 text-5 . ."
+    "name name name name name name name name name"
+    "name name name name name name name name name"
+    "name name name name name name name name name"
+    "bio bio bio bio bio bio bio bio bio"
+    "text-1 text-1 text-1 text-2 text-2 text-2 text-3 text-3 text-3"
+    "image-11 image-11 image-11 image-6 image-6 image-6 image-1 image-1 image-1"
+    "image-12 image-12 image-12 image-7 image-7 image-7 image-4 image-4 image-4" 
+    "image-13 image-13 image-13 image-8 image-8 image-8 image-2 image-2 image-2"
+    "image-14 image-14 image-14 image-9 image-9 image-9 image-5 image-5 image-5"
+    "image-15 image-15 image-15 image-10 image-10 image-10 image-3 image-3 image-3"
+
     /* "zeichen-1 name name name name name bio zeichen-2"
     "zeichen-3 image-1 image-1 . . . . zeichen-4"
     "zeichen-5 text-1 . . image-4 . . zeichen-6"
@@ -33,20 +38,24 @@ img {
     "zeichen-11 . text-3 . . image-5 . zeichen-12"
     ". . . . . text-5 . ." */
 }
-*/
+
 .name {
     grid-area: name;
+    /* position: relative; */
+    top: 170px;
+    z-index: 1;
 }
 
 .name h1 {
-    color: rgb(34, 24, 175);
+    color:  rgb(34, 24, 175);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 6rem;
+    font-size: 16rem;
     margin: 0;
+    text-align:center;
 }
 
 .name h1:hover {
-    color: rgb(112, 137, 60);
+    color: rgb(134, 0, 0);
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-style: normal; */
@@ -57,10 +66,10 @@ img {
 }
 
 .bio p {
-    color: rgb(171, 203, 77);
+    color: rgb(34, 24, 175);
     font-size: 2rem;
     line-height: 1;
-    text-align: right;
+    text-align:center;
     margin: 0;
 }
 
@@ -84,6 +93,46 @@ img {
     grid-area: image-5;
 }
 
+.image-6 {
+    grid-area: image-6;
+}
+
+.image-7 {
+    grid-area: image-7;
+}
+
+.image-8 {
+    grid-area: image-8;
+}
+
+.image-9 {
+    grid-area: image-9;
+}
+
+.image-10 {
+    grid-area: image-10;
+}
+
+.image-11 {
+    grid-area: image-11;
+}
+
+.image-12 {
+    grid-area: image-12;
+}
+
+.image-13 {
+    grid-area: image-13;
+}
+
+.image-14 {
+    grid-area: image-14;
+}
+
+.image-15 {
+    grid-area: image-15;
+}
+
 .text-1 {
     grid-area: text-1;
 }
@@ -96,7 +145,7 @@ img {
     grid-area: text-3;
 }
 
-.text-4 {
+/* .text-4 {
     grid-area: text-4;
 }
 
@@ -104,7 +153,11 @@ img {
     grid-area: text-5;
 }
 
-.zeichen-1 {
+.text-6 {
+    grid-area: text-6;
+} */
+
+/* .zeichen-1 {
     grid-area: zeichen-1;
 }
 
@@ -229,4 +282,4 @@ img {
     font-size: 4rem;
     text-align: right;
     margin: 0;
-}
+} */

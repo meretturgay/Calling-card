@@ -64,6 +64,26 @@ img {
 
 .image-1 {
     grid-area: image-1;
+    position: relative;
+}
+
+.image-1 img {
+    transition: opacity 0.3s ease;
+}
+
+.image-1 .b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.image-1:hover .a {
+    opacity: 0;
+}
+
+.image-1:hover .b {
+    opacity: 1;
 }
 
 .image-2 {
@@ -83,9 +103,9 @@ img {
     transition: transform 0.3s ease;
  }
 
-.image-1 img:hover {
+/* .image-1 img:hover {
     transform: scale(2);
-}
+} */
 .image-3 {
     grid-area: image-3;
 }
